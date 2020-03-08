@@ -5,7 +5,7 @@ from datetime import datetime as dt
 from setuptools import find_packages, setup
 
 PROJECT_NAME = "Ausgrid Outage Data"
-PROJECT_VERSION = "0.0.1"
+PROJECT_VERSION = "0.0.2"
 PROJECT_PACKAGE_NAME = "ausgrid-outages"
 PROJECT_LICENSE = "Apache License 2.0"
 PROJECT_AUTHOR = "Troy Kelly"
@@ -19,8 +19,7 @@ PROJECT_GITHUB_USERNAME = "troykelly"
 PROJECT_GITHUB_REPOSITORY = "python-ausgrid-outages"
 
 PYPI_URL = "https://pypi.python.org/pypi/{}".format(PROJECT_PACKAGE_NAME)
-GITHUB_PATH = "{}/{}".format(PROJECT_GITHUB_USERNAME,
-                             PROJECT_GITHUB_REPOSITORY)
+GITHUB_PATH = "{}/{}".format(PROJECT_GITHUB_USERNAME, PROJECT_GITHUB_REPOSITORY)
 GITHUB_URL = "https://github.com/{}".format(GITHUB_PATH)
 
 DOWNLOAD_URL = "{}/archive/{}.zip".format(GITHUB_URL, PROJECT_VERSION)
