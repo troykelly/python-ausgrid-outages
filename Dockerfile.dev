@@ -1,0 +1,12 @@
+FROM python:3.8-slim
+
+RUN apt-get -y update && apt install -y git-all net-tools  && apt-get upgrade -y
+
+ENV APP_HOME /app
+
+WORKDIR $APP_HOME
+COPY ausgrid ./
+
+RUN pip install requests pyga pylint autopep8
+
+# CMD exec gunicorn --log-level debug --bind :$PORT --workers 1 --threads 8 redirect:app
