@@ -30,7 +30,7 @@ PROJECT_URLS = {
 PACKAGES = find_packages(exclude=["tests", "tests.*"])
 
 REQUIRES = [
-    "requests==2.23.0",
+    "requests==2.31.0",
     "pip>=8.0.3",
 ]
 
